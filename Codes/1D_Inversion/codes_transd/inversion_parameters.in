@@ -1,0 +1,15 @@
+30000                   ! Max number of McMC iterations
+10                      ! How frequently to write models
+100                     ! Number of initial samples to throw away during gridding (burn-in), after decimation (model save frequency) 
+-111                    ! random number seed for reproducible results
+3                       ! min number of nodes/layers
+20                      ! max number of nodes/layers
+2                       ! number of parameters per layer (keep at 2, depth and VS)
+0.                      ! min prior of parameter 1 (depth)
+200.                    ! max prior of parameter 1 (depth)
+2.                      ! proposal std of parameter 1 (depth)
+-1.0                    ! min of prior of parameter 2 (VS based on depth-dependent prior bound - see JMG thesis for details)
+1.0                     ! max of prior of parameter 2 (VS based on depth-dependent prior bound - see JMG thesis for details) 
+0.1                     ! proposal std of parameter 2 (VS based on depth-dependent prior bound - see JMG thesis for details)
+4                       ! number of parallel threads. Parallel loop over station pairs. 
+/home/jeremyg/Data/CascadiaVIHG/Teleseismic_eq/Codes/PHASE_VM/
